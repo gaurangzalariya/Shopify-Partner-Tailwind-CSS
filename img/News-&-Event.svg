@@ -1,0 +1,23 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg fill="none" viewBox="0 0 40 40" width="42" height="42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path d="M14.7363 22.6348L15.59 25.3466"
+        stroke="#162120" stroke-width="1.5"
+        stroke-linecap="round"></path>
+    <path
+        d="M13.5898 18.2729C13.5898 17.7748 13.9114 17.3336 14.3855 17.1812L21.6039 14.8597C22.3442 14.6216 23.1018 15.1737 23.1018 15.9514V23.6753C23.1018 24.4529 22.3442 25.005 21.6039 24.767L14.3855 22.4455C13.9114 22.293 13.5898 21.8518 13.5898 21.3538V18.2729Z"
+        stroke="#162120" stroke-width="1.5"></path>
+    <path d="M11.894 19H9.9043V20.9897H11.894V19Z"
+        fill="#8EA7FF"></path>
+    <path d="M26.9897 18.895H25V20.8847H26.9897V18.895Z"
+        fill="#8EA7FF"></path>
+    <path d="M29.8315 17H27.8418V18.9897H29.8315V17Z"
+        fill="#8EA7FF"></path>
+    <path
+        d="M29.8315 20.7898H27.8418V22.7795H29.8315V20.7898Z"
+        fill="#8EA7FF"></path>
+    <path
+        d="M39.5 20.25C39.5 30.8815 30.8815 39.5 20.25 39.5C9.61852 39.5 1 30.8815 1 20.25C1 9.61852 9.61852 1 20.25 1C30.8815 1 39.5 9.61852 39.5 20.25Z"
+        stroke="#162120" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+    </path>
+</svg>

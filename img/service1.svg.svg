@@ -1,0 +1,20 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg fill="none" viewBox="0 0 40 40" width="40" height="40" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path
+        d="M39.5 20.25C39.5 30.8815 30.8815 39.5 20.25 39.5C9.61852 39.5 1 30.8815 1 20.25C1 9.61852 9.61852 1 20.25 1C30.8815 1 39.5 9.61852 39.5 20.25Z"
+        stroke="#162120" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+    </path>
+    <g clip-path="url(#clip0_1114_69191)">
+        <path
+            d="M20.0179 17.4144C19.9223 16.5412 20.2092 15.6341 20.8787 14.9647L23.7071 12.1362C24.8787 10.9647 26.7782 10.9647 27.9497 12.1362C29.1213 13.3078 29.1213 15.2073 27.9497 16.3789L25.1213 19.2073C24.5519 19.7767 23.8107 20.0693 23.0645 20.0853"
+            stroke="#162120" stroke-width="1.5"
+            stroke-linecap="round"></path>
+        <path
+            d="M19.9821 22.5853C20.0777 23.4585 19.7908 24.3656 19.1213 25.0351L16.2929 27.8635C15.1213 29.0351 13.2218 29.0351 12.0503 27.8635C10.8787 26.6919 10.8787 24.7924 12.0503 23.6209L14.8787 20.7924C15.4481 20.2231 16.1893 19.9304 16.9355 19.9145"
+            stroke="#162120" stroke-width="1.5"
+            stroke-linecap="round"></path>
+        <path d="M20.9897 19H19V20.9897H20.9897V19Z"
+            fill="#8EA7FF"></path>
+    </g>
+</svg>

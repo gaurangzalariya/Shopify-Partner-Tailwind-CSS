@@ -1,0 +1,15 @@
+<svg width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M39.5 20.25C39.5 30.8815 30.8815 39.5 20.25 39.5C9.61852 39.5 1 30.8815 1 20.25C1 9.61852 9.61852 1 20.25 1C30.8815 1 39.5 9.61852 39.5 20.25Z"
+        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <mask id="path-2-inside-1_1114_69209" fill="white">
+        <rect x="12" y="13.5" width="16" height="13" rx="1"></rect>
+    </mask>
+    <rect x="12" y="13.5" width="16" height="13" rx="1"
+        stroke="currentColor" stroke-width="3" mask="url(#path-2-inside-1_1114_69209)"></rect>
+    <path
+        d="M15.6797 18L17.4811 19.8014C17.6764 19.9967 17.6764 20.3133 17.4811 20.5085L15.6797 22.31"
+        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+    <path d="M21.4897 19H19.5V20.9897H21.4897V19Z" fill="currentColor"></path>
+    <path d="M24.4897 19H22.5V20.9897H24.4897V19Z" fill="currentColor"></path>
+</svg>

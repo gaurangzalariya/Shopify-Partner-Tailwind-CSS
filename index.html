@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- fontosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /////////script links///////// -->
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind variable file src -->
+    <script src="./js/tailwind.config.js"></script>
+</head>
+
+<body id="over" class="overflow-auto">
+    <!-- /////navbar start///// -->
+    <nav class="w-full flex height-auto bg-white mx-auto max-lg:py-[18px]" id="d-line">
+        <div class="w-full flex flex-col justify-around gap-[35px] pt-[px] items-center mx-auto max-[625px]:px-[4%] lg:flex-row max-2xl:px-[5.5%] max-w-[1420px]">
+            <!-- Navigation Content -->
+            <!-- compny logo -->
+           <div class="w-20% flex items-center justify-between max-lg:w-full">
+            <img src="img/logo.svg" alt="Logo" width="169" height="28">
+                <div class="flex items-center gap-[5px] lg:hidden">
+                    <a href="#" class="font-mono-s bg-lightblack text-white font-extra-w text-[14px] px-[20px] py-[8px] rounded-[9999px] hover:text-lightblack hover:bg-dark-white hover:outline">Join</a>
+                    <button id="menuToggle" class="nav-button px-[6px] py-[4px] rounded-[8px]">
+                        <span class="bar bar1 rounded-[2px] w-[22px] h-[2px] my-[3px] block bg-lightblack"></span>
+                        <span class="bar bar2 rounded-[2px] w-[22px] h-[2px] my-[3px] block bg-lightblack"></span>
+                        <span class="bar bar3 rounded-[2px] w-[22px] h-[2px] my-[3px] block bg-lightblack"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- list -->
+            <div id="navbar" class="h-[100%] w-full z-10 flex flex-col justify-between bg-white items-center max-lg:shadow-medium-Shadow max-lg:fixed bg-white max-lg:top-[0] max-lg:left-[-100%] max-lg:w-[80%] lg:inline-flex lg:block max-lg:items-start lg:flex-row max-lg:transition-transform max-lg:duration-700 max-lg:ease-in-out max-lg:transform">
+                <div class="overflow-y-auto max-lg:w-full">
+                    <div class="w-[100%] w-full py-[18px] pl-[4%] lg:hidden max-lg:border-b max-lg:border-off-gray">
+                        <img src="img/logo.svg" alt="Logo" width="169" height="28">
+                    </div>
+                    <ul class="flex flex-col gap-[25px] bg-white max-lg:mt-[29px] lg:flex-row max-lg:pt-[4%] max-lg:pl-[4%] xl:gap-[40px]">
+                        <li class="border-white lg:border-b-[5px] lg:pt-[27px] lg:pb-[17px]">
+                            <button class="dropdown-toggle text-lightblack hover:underline font-dm text-smallText md:text-mediumText max-lg:font-extra-w lg:text-normalpsg">Ways to Partner
+                                <i class="toggle-icon fa-solid fa-angle-down"></i>
+                            </button>
+                            <!-- Dropdown Menu 1 (listbar) -->
+                            <div class="dropdown-menu listbar hidden w-[100%] left-0 top-[74px] lg:border-t border-off-gray lg:bg-white lg:shadow-xl lg:absolute">
+                                <!-- start list -->
+                                <ul class="mx-auto flex max-sm:pt-[15px] max-[625px]:px-[4%] max-lg:justify-between lg:whitespace-nowrap lg:gap-[170px] max-lg:flex-col max-w-[1420px] max-2xl:px-[5.5%]">
+                                        <!-- 1 list -->
+                                    <li class="border-off-gray">
+                                        <div class="flex py-[10px] items-center lg:py-[28px] gap-[10px]">
+                                            <img src="img/service-partner.svg" alt="">
+                                            <a href="#">
+                                                <h3 class="font-dm text-normalpsg font-light-w">Service partner</h3>
+                                                <p class="font-barlow text-n-text text-optical-gray">For consulting, build and migration, and more</p>
+                                            </a>      
+                                        </div>
+                                    </li>
+                                    <!-- 2 list -->
+                                    <li>
+                                        <div class="flex py-[10px] items-center lg:py-[28px] gap-[10px]">
+                                            <img src="img/technology-partner.svg" alt="">
+                                            <a href="#">
+                                                <h3 class="font-dm text-normalpsg font-light-w">Technology partner</h3>
+                                                <p class="font-barlow text-n-text text-optical-gray">Build custom apps and platform extensions</p>
+                                            </a>  
+                                        </div>  
+                                    </li>
+                                </ul>
+                                <!-- end list -->
+                            </div>
+                            <!-- end 1st nested list -->
+                        </li>
+                        <li class="lg:pt-[27px] lg:pb-[17px]">
+                            <a href="#" class="font-dm text-lightblack text-smallText md:text-mediumText max-lg:font-extra-w lg:text-normalpsg hover:underline">Education</a>
+                        </li>
+                        <li class="border-white lg:border-b-[5px] lg:pt-[27px] lg:pb-[17px]">
+                            <button class="dropdown-toggle text-lightblack font-dm text-smallText md:text-mediumText max-lg:font-extra-w lg:text-normalpsg hover:underline">Resources<i class="toggle-icon fa-solid fa-angle-down"></i></button>
+                              <!-- Dropdown Menu 2 (listbar2) -->
+                            <div class="dropdown-menu listbar hidden w-[100%] left-0 top-[74px] lg:border-t border-off-gray lg:bg-white lg:shadow-xl lg:absolute">
+                                <!-- start list -->
+                                <ul class="overflow-y-auto mx-auto flex justify-between max-sm:pt-[30px] sm:py-[15px] max-[625px]:px-[4%] max-lg:gap-[45px] lg:gap-[20px] max-lg:max-h-[400px] lg:py-[32px] max-w-[1420px] max-lg:flex-col max-2xl:px-[5.5%]">
+                                    <!-- 1st list item -->
+                                    <li class="lg:w-1/3">
+                                        <ul class="flex flex-col gap-[25px]">
+                                            <li class="border-b border-off-gray">
+                                                <div class="flex gap-[13px] items-center pb-[15px] ">
+                                                    <img src="img/Partner-Success-Stories.svg" alt="">
+                                                    <h3 class="font-dm text-normalpsg font-extra-w tracking-[-1px]">Partner Success Stories</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Convert Digital</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">Higher revenue and client retention with Shopify</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> 
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Avex</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">500% growth over 3 years by switching to Shopify</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Domaine</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">Doubling a client base and team by building a Shopifypractice</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">P3 Media</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">Unlocked growth by moving from Adobe Commerce to Shopify</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 2nd list item -->
+                                    <li class="lg:w-1/3">
+                                        <ul class="flex flex-col gap-[25px]">
+                                            <li class="border-b border-off-gray">
+                                                <div class="flex gap-[13px] ml-[-7px] items-center pb-[15px] ">
+                                                    <img src="img/News-&-Event.svg" alt="">
+                                                    <h3 class="font-dm text-normalpsg font-extra-w tracking-[-1px]">News & Event</h3>  
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Google Cloud & Shopify</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">A partnership to transform customer experience</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Astound Digital& Shopify</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">A partnership to boost outcomes for retail brands</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Oracle & Shopify</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">A partnership to accelerate business growth</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- 3rd list item -->
+                                    <li class="lg:w-1/3">
+                                        <ul class="flex flex-col gap-[25px]">
+                                            <li class="border-b border-off-gray">
+                                                <div class="flex gap-[13px] items-center pb-[15px]">
+                                                    <img src="img/Ouick-Links.svg" alt="">
+                                                    <h3 class="font-dm text-normalpsg font-extra-w">Ouick Lin</h3>    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Partner Blog</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">Partner stories and partnership announcements</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Shopify News</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">All company news and press releases</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <h2 class="font-dm text-normalpsg font-light-w">Shopify Academy</h2>
+                                                    <p class="font-dm text-n-text text-light-gray">Best-in-class training and enablement</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <!-- end list --> 
+                            </div>
+                            <!-- end 2nd nested list-->
+                        </li>
+                        <li class="lg:pt-[27px] lg:pb-[17px]">
+                            <a href="#"class="font-dm text-lightblack text-smallText md:text-mediumText max-lg:font-extra-w lg:text-normalpsg hover:underline">Find a partner</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex bg-white items-center gap-[10px] max-sm:flex-col max-lg:w-full max-lg:h-[130px] max-lg:px-[4%] lg:gap-[20px] max-lg:py-[20px] max-lg:border-t max-lg:border-off-gray">
+                    <div class="text-center max-sm:w-full md:pt-[17px] md:pb-[13px] max-lg:w-[50%]">
+                        <a href="#" class="w-full font-dm block rounded-[9999px] py-[8px] text-[20px] text-lightblack text-normalpsg max-lg:border-[2px] max-lg:border-black hover:underline">Log in</a>
+                    </div>
+                    <div  class="text-center max-sm:w-full md:pt-[17px] md:pb-[13px] max-lg:w-[50%]">
+                        <a href="#"class="w-full font-mono-s inline-block text-lightblack text-[16px] py-[8px] transition-all duration-300 rounded-[9999px] bg-lightblack text-white font-light-w border border-lightblack block lg:px-[20px] hover:text-lightblack hover:bg-white">Join
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- button -->
+    </nav>
+    <!-- /////navbar end///// -->
+
+    <!-- ////// start hero section ////// -->
+    <section class="mx-auto mt-[30px] max-w-[1420px] max-[625px]:px-[4%] md:mt-[60px] lg:mt-[70px] xl:mt-[120px] max-2xl:px-[6%]">
+        <div class="mx-auto">
+            <div class="flex flex-col gap-[35px] lg:w-2/3">
+                <!-- contain -->
+                <div class="flex flex-col gap-[7px]">
+                    <p class="font-mono-s text-n-text text-lightblack font-light-w">SHOPIFY PARTNER PROGRAM</p>
+                    <h1 class="font-dm font-light leading-medium-lh tracking-[-0.96px] text-[52px] lg:text-[78px]">The partner ecosystem built for business growth</h1>
+                    <p class="font-dm text-lightblack text-largepsg tracking-[-0.46px] lg:text-smallText xl:m-text">Increase revenue and future proof your business. Join the partner ecosystem that’s keeping commerce ahead of the curve.</p>
+                </div>
+                <div>
+                    <a href="#"class="font-mono-s items-center inline-block bg-darkgray px-[22px] py-[8px] rounded-[9999px] text-white font-light-w text-normalpsg transition-all duration-300 lg:text-largepsg lg:px-[24px] lg:py-[12px] hover:bg-lightblack">Become a partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////// end hero section ////// -->
+
+    <!-- ////// start slider section ////// -->
+    <div class="mx-auto pt-[50px] md:pt-[60px] lg:pt-[70px] xl:pt-[120px]">
+        <div class="slider">
+            <div class="slider-wrapper">
+                <img src="img/google-logo.svg" alt="Company Logo 1">
+                <img src="img/Oracle-logo.svg" alt="Company Logo 2">
+                <img src="img/bloomreach-logo.svg" alt="Company Logo 3">
+                <img src="img/accenture.svg" alt="Company Logo 4">
+                <img src="img/EY-logo.svg" alt="Company Logo 5">
+                <img src="img/Manhattan-logo.svg" alt="Company Logo 6">
+                <img src="img/Kalaviyo-logo.svg" alt="Company Logo 7">
+                <img src="img/Deloitte-logo.svg" alt="Company Logo 8">
+                <img src="img/accenture.svg" alt="Company Logo 4">
+                <img src="img/Oracle-logo.svg" alt="Company Logo 2">
+                <img src="img/EY-logo.svg" alt="Company Logo 5">
+                <!-- Duplicate logos for continuous effect -->
+                <img src="img/google-logo.svg" alt="Company Logo 1">
+                <img src="img/Oracle-logo.svg" alt="Company Logo 2">
+                <img src="img/bloomreach-logo.svg" alt="Company Logo 3">
+                <img src="img/accenture.svg" alt="Company Logo 4">
+                <img src="img/EY-logo.svg" alt="Company Logo 5">
+                <img src="img/Manhattan-logo.svg" alt="Company Logo 6">
+                <img src="img/Kalaviyo-logo.svg" alt="Company Logo 7">
+                <img src="img/Deloitte-logo.svg" alt="Company Logo 8">
+                <img src="img/bloomreach-logo.svg" alt="Company Logo 3">
+                <img src="img/accenture.svg" alt="Company Logo 4">
+                <img src="img/Kalaviyo-logo.svg" alt="Company Logo 7">
+            </div>
+        </div>
+    </div>
+    <!-- ////// end slider section ////// -->
+
+    <!-- ////// star compny's advantage section ////// -->
+    <div class="bg-lightblack py-[50px] mt-[20px] md:mt-[60px] md:py-[60px] lg:mt-[70px] lg:py-[70px] max-lg:px-[4%] xl:mt-[50px] xl:py-[120px] max-2xl:px-[6%]">
+        <div class="mx-auto flex flex-col gap-mediumGap md:gap-largGap max-w-[1420px]">
+            <!-- contain -->
+            <div class="w-full flex flex-col gap-[10px] xl:w-2/3">
+                <p class="font-mono-s text-n-text text-OliveGreen font-light-w">REASON TO JOIN</p>
+                <h2 class="font-dm font-light text-dark-white tracking-[-0.96px] text-[32px] leading-medium-lh lg:text-xlText xl:text-2xlText">Accelerate your business with unmatched partnership opportunities</h2>
+                <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg ">There's never been a better time to be a Shopify Partner—drive business growth, open up new channels, and upskill your teams for the future of commerce.</p>
+            </div>
+            <!-- box info -->
+            <div class="mx-auto flex gap-[24px] grid sm:grid-cols-2 max-w-[1420px] xl:grid-cols-3">
+                <div class="flex-1 rounded-[10px] flex flex-col fade-up">
+                    <div class="flex-1 flex flex-col gap-[15px] bg-optical-gray px-[24px] pt-[24px] pb-[24px] rounded-t-[16px] lg:px-[32px] lg:pt-[32px] lg:pb-[56px]">
+                        <h2 class="font-dm font-light text-dark-white text-smallText leading-medium-lh tracking-[-0.48px] lg:text-mediumText">Unlock new revenue streams</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Shopify allows businesses to open up new revenue streams, like B2B and POS. Partners that focus primarily on Shopify see a higher margin.</p>
+                    </div>
+                    <div class="bg-OliveGreen flex items-center gap-[7px] flex-shrink-0 rounded-b-[16px] pl-[15px] py-[15px] xl:py-[20px] xl:pl-[32px]">
+                        <p class="font-mono-s font-[300] text-lightblack text-[44px] xs:text-[45px] sm:text-[46px] md:text-[48px] lg:text-[52px]">155%</p>ROI within three years of joining Shopify</p>
+                    </div>
+                </div>
+                <div class="flex-1 rounded-[160px] flex flex-col fade-up">
+                    <div class="flex-1 flex flex-col gap-[15px] bg-optical-gray px-[24px] pt-[24px] pb-[24px] rounded-t-[16px] lg:px-[32px] lg:pt-[32px] lg:pb-[56px]">
+                        <h2 class="font-dm font-light text-dark-white text-smallText tracking-[-0.48px] leading-medium-lh lg:text-mediumText">Access growing demand</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">We've been recognized as a platform leader by IDC and Gartner. Businesses are requesting Shopify by name as the preferred solution in all segments, especially enterprise.</p>
+                    </div>
+                    <div class="bg-OliveGreen flex items-center gap-[7px] pl-[15px] py-[15px] xl:py-[20px] xl:pl-[32px] flex-shrink-0 rounded-b-[16px]">
+                        <p class="font-mono-s font-[300] text-lightblack text-[44px] xs:text-[45px] sm:text-[46px] md:text-[48px] lg:text-[52px]">43:1</p>Rate of merchant growth</p>
+                    </div>
+                </div>
+
+                <div class="flex-1 rounded-[160px] flex flex-col fade-up">
+                    <div class="flex-1 flex flex-col gap-[15px] bg-optical-gray px-[24px] pt-[24px] pb-[24px] rounded-t-[16px] lg:px-[32px] lg:pt-[32px] lg:pb-[56px]">
+                        <h2 class="font-dm font-light text-dark-white text-smallText tracking-[-0.48px] leading-medium-lh lg:text-mediumText">Leverage rapid innovation</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Our business is heavily invested in keeping our platform and partners on the cutting edgewithtools and technologies that address the evolving needs of our clients.</p>
+                    </div>
+                    <div class="bg-OliveGreen flex items-center gap-[7px] pl-[15px] py-[15px] flex-shrink-0 rounded-b-[16px] xl:py-[20px] xl:pl-[32px]">
+                        <p class="font-mono-s font-[300] text-lightblack text-[44px] xs:text-[45px] sm:text-[46px] md:text-[48px] lg:text-[52px]">800+</p>
+                        <p class="font-dm text-lightblack leading-medium-lhtext-normalpsg lg:text-largepsg">Features and updates released in three years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////// end compny's advantage section ////// -->
+
+    <!-- ////// star partner section ////// -->
+    <section class="grid-background max-lg:px-[4%] max-2xl:px-[5.5%]">
+        <div
+            class="flex flex-col gap-[40px] mx-auto py-[50px] md:py-[60px] max-w-[1420px] lg:py-[70px] xl:flex-row xl:py-[120px]">
+            <div class="flex flex-col gap-[10px] xl:w-1/3">
+                <p class="font-mono-s text-n-text text-lightblack font-light-w">WAYS TO PARTNER</p>
+                <h2 class="font-dm font-light text-lightblack leading-small-lh tracking-[-0.96px] text-[32px] lg:text-xlText xl:text-2xlText">A path for every partner</h2>
+                <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg">From building solutions to providing services and business consulting, there are many ways to be a Shopify Partner. Pick thepath that best describes your business.</p>
+            </div>
+            <!-- box info slider -->
+            <div class="w-[100%] xl:w-2/3">
+                <div class="max-md:overflow-x-auto">
+                    <div class="flex gap-smallGap fade-right max-[645px]:w-[600px]">
+                        <div class="w-[80%] md:basis-1/2 bg-white py-[34px] rounded-[16px] flex flex-col max-[711px]:border min-[711px]:shadow-small-Shadow ">
+                            <div class="px-[24px] md:px-[32px] flex flex-col gap-smallGap flex-grow ">
+                                <h2 class="font-dm font-light leading-medium-lh text-lightblack text-[28px] md:text-largText lg:text-xlText">Service partner</h2>
+                                <div>
+                                    <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg">Help businesses successfully build and migrate stores, identify new avenues of growth, andprovide ongoing services.</p>
+                                    <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg">For System Integrators, Consultancies, and Agencies.</p>
+                                </div>
+                            </div>
+                            <div class="w-full flex-shrink-0">
+                                <img src="img/Explore-service.svg" class="w-full" alt="">
+                            </div>
+                            <a href="#" class="px-[32px] mt-[20px] group">
+                                <p class="font-mono-s relative font-normal-w text-lightblack text-n-text md:text-largepsg border-b-[2px] border-lightblack">
+                                    Explore service track
+                                    <i class="fa-solid fa-arrow-right absolute right-[0px] md:right-[15px] top-[6px] transition-all duration-300 group-hover:right-0"></i>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="w-[80%] bg-optical-gray py-[34px] rounded-[16px] flex flex-col md:basis-1/2">
+                            <div class="px-[24px] flex flex-col gap-smallGap flex-grow md:px-[32px]">
+                                <h2 class="font-dm leading-medium-lh font-light text-dark-white text-[28px] md:text-largText lg:text-xlText">Technology partner</h2>
+                                <div>
+                                    <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Help businesses build app solutions, extend the platform, improve their technology stack, and customize their store.</p>
+                                    <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">For Independent Software Vendors (ISVs), and Developers of Stores, Themes, and Apps.</p>
+                                </div>
+                            </div>
+                            <div class="w-full flex-shrink-0">
+                                <img src="img/Explore-technology.svg" class="w-full" alt="">
+                            </div>
+                            <a href="#" class="px-[32px] mt-[20px] group">
+                                <p class="font-mono-s relative font-normal-w text-white text-n-text border-b-[2px] border-darkwhite md:text-largepsg">
+                                    Explore technology track
+                                    <i class="fa-solid fa-arrow-right absolute right-[0px] top-[6px] transition-all duration-300 min-[800px]:right-[15px] group-hover:right-0"></i>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////// end partner section ////// -->
+
+
+    <!-- ////// start partner's benifit section ////// -->
+    <div class="bg-lightblack flex flex-col gap-mediumGap max-lg:px-[4%] max-2xl:px-[5.5%]">
+        <div class="mx-auto py-[80px] flex flex-col gap-mediumGap md:gap-largGap md:py-[60px] max-w-[1420px] lg:py-[70px] xl:py-[120px]">
+            <!-- contain -->
+            <div class="flex flex-col gap-[10px] lg:w-3/4">
+                <p class="font-mono-s text-n-text text-OliveGreen font-light-w">PARTNER BANEFITS</p>
+                <h2 class="font-dm font-light text-dark-white text-[32px] leading-medium-lh lg:text-xlText xl:text-2xlText">Partnering with Shopify has its advantages</h2>
+                <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg ">Increase Access incentives, education and enablement opportunities, and tools designed to enhance your skills and elevate your status with customers.</p>
+            </div>
+            <div class="flex w-full gap-smallGap grid min-[642px]:grid-cols-2 xl:grid-cols-3 ">
+                <div class="flex flex-col fade-left gap-[20px] md:w-33.33% lg:gap-[25px]">
+                    <div>
+                        <img src="img/svg1.svg" alt="">
+                    </div>
+                    <div class="flex flex-col gap-[10px] lg:gap-[15px]">
+                        <h2 class="font-dm font-light text-dark-white leading-medium-lh text-smallText lg:text-mediumText">Learn with educational enablement</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Continuously evolve your practice with best-in-class training and enablement to help your team differentiate on skill and expertise.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col fade-left gap-[20px] md:w-33.33% lg:gap-[25px]">
+                    <div>
+                        <img src="img/svg2.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex flex-col gap-[10px] lg:gap-[15px]">
+                        <h2 class="font-dm font-light text-dark-white leading-medium-lh text-smallText lg:text-mediumText">Discover new revenue opportunities</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Expand your Shopify commerce business and discover new ways to make money with sales incentives added and updated often.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col fade-left gap-[20px] md:w-33.33% lg:gap-[25px]">
+                    <div>
+                        <img src="img/svg3.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex flex-col gap-[10px] lg:gap-[15px]">
+                        <h2 class="font-dm font-light text-dark-white leading-medium-lh text-smallText lg:text-mediumText">Engage with powerful marketing tools</h2>
+                        <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">Build engagement with sales and marketing tools and our partner portal to spark collaboration, enhance your profile, and unlock new revenue.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex max-md:flex-col">
+                <div class="bg-optical-gray flex flex-col justify-center max-md:rounded-t-[16px] md:rounded-l-[16px] md:w-1/2">
+                    <video class="sm:w-[70%] mx-auto" autoplay loop preload="auto" muted>
+                        <source src="./videos/7a5044c87dc46ebbfbd851fe6507b113.webm" type="video/mp4">Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="bg-white flex flex-col justify-center px-[22px] max-md:rounded-b-[16px] max-md:py-[22px] md:px-[32px] md:rounded-r-[16px] md:w-1/2 xl:px-[64px] max-xl:py-[32px]">
+                    <div class="flex flex-col gap-[20px]">
+                        <div class="flex flex-col gap-[10px]">
+                            <p class="font-mono-s text-n-text text-lightblack font-light-w">SHOPIFY ACADEMY</p>
+                            <h2 class="font-dm font-light text-lightblack text-[32px] leading-small-lh lg:text-xlText">Invest in your success</h2>
+                            <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg ">Enhance your product knowledge and stay on top of the latest developments with on-demand resources, live training, and Verified Skills as a core component of Shopify’s partner offering.</p>
+                        </div>
+                        <div >
+                            <a href="#" class="font-mono-s bg-white inline-block outline-[2px] px-[18px] py-[8px] border-white rounded-[9999px] border-[1px] outline text-lightblack font-light-w text-normalpsg transition-all duration-300 lg:px-[24px] lg:py-[12px] lg:text-largepsg hover:border-lightblack">Explore the academy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////// end partner's benifit section ////// -->
+
+    <!-- ////// start compny info section ////// -->
+    <section class="custom2-background flex flex-col gap-[25px] max-lg:px-[4%] max-2xl:px-[5.5%]">
+        <div class="mx-auto flex flex-col gap-mediumGap md:gap-largGap pt-[75px] md:pt-[60px] lg:pt-[70px] max-w-[1420px] xl:pt-[120px]">
+            <div class="flex flex-col gap-[10px] lg:w-4/6">
+                <p class="font-mono-s text-n-text text-lightblack font-light-w">SUCCESS STORIES</p>
+                <h2 class="font-dm font-light text-lightblack text-[32px] leading-small-lh lg:text-xlText xl:text-2xlText">Better together with Shopify</h2>
+                <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg ">See how partnerships are igniting growth, maximizing their profit potential, and powering the future of commerce.</p>
+            </div>
+            <div class="flex max-md:flex-col">
+                <div class="bg-light-gray flex flex-col justify-between py-[22px] pr-[22px] pl-[22px] md:basis-1/2 max-md:rounded-t-[16px] md:rounded-l-[16px] max-lg:gap-[25px] lg:gap-[30px] lg:basis-2/3 lg:p-[32px]">
+                    <div>
+                        <h2 class="font-dm font-normal-w text-white leading-[1.4] text-[24px] lg:text-[28px] xl:text-[32px]">Shopify is the quickest moving, most nimble tech around. The partnership ecosystem is robust, and we’ve found a lot of alignment. It's nice solving big problems together.</h2>
+                    </div>
+                    <div class="flex flex-col gap-[6px]">
+                        <p class="font-dm text-white text-largepsg lg:text-smallText ">P3 Media</p>
+                        <p class="font-dm font-extra-w text-white text-normalpsg lg:text-n-text ">
+                            David Wagoner --
+                            <span class="font-light">Co-Founder</span>
+                        </p>
+                        <div>
+                            <a href="#" class="underline font-dm relative group font-light-w text-white spaced-words text-normalpsg lg:text-largepsg hover:text-dark-white hover:no-underline">Read case study
+                                <i class="fa-solid fa-arrow-right text-white absolute right-[-20px] top-[6px] opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-30px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-lightblack flex py-[30px] px-[20px] py-[30px] px-[20px] md:basis-1/2 max-md:rounded-b-[16px] md:rounded-r-[16px] lg:basis-1/3 lg:px-[36px]">
+                    <img class="object-contain" src="img/web.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto flex gap-[25px] flex-col lg:flex-row max-w-[1420px]">
+            <div class="bg-light-perpal flex flex-col justify-between shadow-small-Shadow rounded-[16px] max-sm:gap-[50px] lg:basis-2/6 max-lg:gap-[120px]">
+                <div class="flex flex-col p-[32px] gap-[15px] max-md:p-[22px]">
+                    <p class="font-mono-s text-n-text text-lightblack font-light-w">SERVICE PARTNER</p>
+                    <h2 class="font-dm text-lightblack text-smallText leading-medium-lh tracking-[-0.46px] lg:text-mediumText">How Convert Digital increased revenue and client retention</h2>
+                    <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg">Since partnering with Shopify, Convert Digital have grown their business, expanded their client portfolio, and increased their retainer size.</p>
+                </div>
+                <div class="px-[32px] pb-[32px] max-md:px-[22px] max-md:pb-[22px]">
+                    <a href="#" class="underline font-dm font-light-w text-lightblack relative group text-normalpsg spaced-words lg:text-largepsg hover:no-underline">Read case study
+                        <i class="fa-solid fa-arrow-right text-lightblack absolute right-[-20px] top-[6px] opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-30px]"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row lg:basis-4/6">
+                <div class="bg-OliveGreen flex flex-col flex-1 justify-center py-[30px] px-[36px] shadow-small-Shadow max-md:rounded-t-[16px] md:rounded-l-[16px] max-md:hidden md:basis-1/2">
+                    <img src="img/web-2.webp" alt="">
+                </div>
+                <div class="bg-white flex flex-col shadow-2xl justify-between shadow-small-Shadow max-sm:gap-[50px] max-md:rounded-[16px] md:rounded-r-[16px] md:basis-1/2 max-lg:gap-[120px]">
+                    <div class="flex flex-col p-[32px] gap-[15px] max-md:p-[22px]">
+                        <p class="font-mono-s font-light-w text-n-text text-lightblack">SERVICE PARTNER</p>
+                        <h2 class="font-dm text-lightblack leading-medium-lh tracking-[-0.46px] text-smallText lg:text-mediumText">Why Domaine built a Shopify exclusive practice</h2>
+                        <p class="font-dm text-lightblack text-normalpsg lg:text-largepsg">Shopify helps Domaine focus on transformation instead of maintenance–growing, innovating, and scaling together.</p>
+                    </div>
+                    <div class="px-[32px] pb-[32px] max-md:px-[22px] max-md:pb-[22px]">
+                        <a href="#" class="underline font-dm relative group font-light-w text-lightblack spaced-words text-normalpsg lg:text-largepsg hover:no-underline">Read case study
+                            <i class="fa-solid fa-arrow-right text-lightblack absolute right-[-20px] top-[6px] opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:right-[-30px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////// end compny info section ////// -->
+
+    <!-- ////// start program section ////// -->
+    <section class="custom-background mx-auto relative bg-lightblack z-99 max-lg:px-[4%] max-2xl:px-[6%]">
+        <div class="w-full h-full absolute left-0 bottom-0">
+            <picture>
+                <img class="w-full h-full object-cover object-bottom block"
+                    src="https://cdn.shopify.com/b/shopify-brochure2-assets/49a395e075447d2933fa0d96ad97a9e9.svg?width=1440">
+            </picture>
+        </div>
+        <div class="max-sm:px-[0%] relative mx-auto pt-[60px] max-md:pb-[90px] md:py-[60px] lg:py-[70px] max-w-[1420px] xl:py-[130px] max-2xl:px-[6%]">
+            <div class="mx-auto relative z-10 max-w-[1420px]">
+                <div class="flex flex-col gap-smallGap">
+                    <!-- Partner info -->
+                    <div class="flex flex-col gap-[20px] mx-auto text-center min-[1344px]:w-3/5">
+                        <div class="flex flex-col gap-[5px]">
+                            <p class="font-mono-s text-n-text text-OliveGreen font-light-w">SHOOPIFY PARTNER PROGRAM</p>
+                            <h1 class="font-dm font-light text-dark-white leading-medium-lh text-[40px] md:text-[48px] lg:text-[56px]">Join the partner ecosystem built for business growth</h1>
+                            <p class="font-dm text-dark-white text-normalpsg lg:text-largepsg">See how fast your business can grow with partnership opportunities on Shopify.</p>
+                        </div>
+                        <div>
+                            <a href="#" class="font-mono-s inline-block items-center bg-OliveGreen leading-[24px] text-lightblack font-light-w px-[22px] transition-all duration-300 py-[8px] rounded-[9999px] text-normalpsg lg:text-largepsg lg:px-[24px] lg:py-[12px] hover:text-lightblack hover:bg-dark-white">Become a partner</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////// end program section ////// -->
+
+    <!-- ////// start footer ////// -->
+    <footer class="bg-black pt-[60px] pb-[45px]">
+        <section class="mx-medium max-lg:px-[4%] max-2xl:px-[5.5%]">
+            <div class="max-w-[1420px] flex mx-auto gap-[170px] justify-between gap-y-largGap border-b border-[#313131] pb-[80px] max-md:flex-col">
+                <div>
+                    <img src="img/footer-logo.svg" alt="" class="h-[44px]">
+                </div>
+                <div class="grid gap-smallGap gap-y-largGap max-md:grid-cols-2 lg:gap-x-[75px]">
+                    <div class="grid grid-cols-1 md:gap-[85px] md:grid-cols-3 max-md:gap-y-[50px] lg:grid-cols-4 lg:gap-[75px]">
+                        <!-- list no-1 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Shopify</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- category name -->
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Investors</a>
+                                </li>
+                                <li>
+                                    <a href="#"class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Press and Media</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Partners</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Affiliates</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Service Status</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list no-2 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Support</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Merchant Support</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Hire a Partner</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Academy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list no-3 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Developers</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify.dev</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">API Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Dev Degree</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list no-4 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px] max-lg:hidden">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Product</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shop Pay</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Plus</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Fulfillment Network</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Linkpop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify for Enterprise</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-col-1 md:grid-cols-3 md:gap-[85px] lg:grid-cols-4 lg:gap-[75px]">
+                        <!-- list no-4 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px] lg:hidden">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Product</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shop Pay</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Plus</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify Fulfillment Network</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Linkpop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Shopify for Enterprise</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list no-5 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Globle impect</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Sustainability</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Social Impact</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Build Black</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Build Native</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Research</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list no-6 -->
+                        <div class="flex flex-col gap-[20px] md:gap-[30px]">
+                            <!-- category name -->
+                            <h2 class="font-barlow text-normalpsg text-dark-white font-extra-w">Solution</h2>
+                            <ul class="flex flex-col gap-[10px]">
+                                <!-- sub-category -->
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Online Store Builder</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Website Builder</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Ecommerce Website</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-medium md:mx-medium-m mt-[45px]">
+            <div class="mx-auto justify-between gap-y-[30px] flex flex-col max-w-[1420px] xl:flex-row">
+                <div class="flex items-center flex-col gap-[30px] md:gap-largGap md:flex-row">
+                    <div>
+                        <span href="#" class="text-dark-white flex items-center gap-[7px] text-[16px] transition-all duration-300 cursor-pointer hover:text-gray-400">
+                            <a href="#" class="fa-solid fa-globe"></a>
+                            <p>USA</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <ul class="flex gap-[30px] items-center flex-col md:flex-row">
+                            <li>
+                                <a href="#" class="font-barlow text-normalpsg font-normal-w text-normalpsg text-dark-white hover:underline">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Sitemap</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-barlow font-normal-w text-normalpsg text-dark-white hover:underline">Privacy Choices</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-md:mx-auto">
+                    <div class="flex gap-[15px] sm:gap-[25px]">
+                        <a href="#" class="h-full px-[11px] py-[8px] transition-all duration-300 bg-white rounded-full flex items-center justify-center md:text-smallText hover:bg-gray-300">
+                            <i href="#" class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i href="#" class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i href="#" class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i href="#" class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i href="#" class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="h-full p-2 md:text-smallText bg-white transition-all duration-300 rounded-full flex items-center justify-center hover:bg-gray-300">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- ////// start program section ////// -->
+
+    <!-- js file link -->
+    <script src="./js/function.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg fill="none" viewBox="0 0 40 40" width="42" height="42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <path
+        d="M39.5 20.25C39.5 30.8815 30.8815 39.5 20.25 39.5C9.61852 39.5 1 30.8815 1 20.25C1 9.61852 9.61852 1 20.25 1C30.8815 1 39.5 9.61852 39.5 20.25Z"
+        stroke="#162120" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <mask id="path-2-inside-1_1114_69198" fill="white">
+        <rect x="12" y="13.5" width="16" height="13" rx="1"></rect>
+    </mask>
+    <rect x="12" y="13.5" width="16" height="13" rx="1" stroke="#162120" stroke-width="3"
+        mask="url(#path-2-inside-1_1114_69198)"></rect>
+    <path d="M22.9897 17H21V18.9897H22.9897V17Z" fill="#8EA7FF"></path>
+    <path d="M22.9897 21H21V22.9897H22.9897V21Z" fill="#8EA7FF"></path>
+    <path d="M18.9897 21H17V22.9897H18.9897V21Z" fill="#8EA7FF"></path>
+</svg>
